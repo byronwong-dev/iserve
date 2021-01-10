@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TodoController::class, 'index'])->name('home');
+
+Route::get('/search', [TodoController::class, 'search'])->name('search');
